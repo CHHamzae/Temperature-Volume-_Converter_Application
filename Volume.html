@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume</title>
+  <link rel="stylesheet" href="Volume.css">
+</head>
+
+<body>
+
+  <div class="Temperature">
+
+    <h4 class="title">Convert Volume</h4>
+
+    <form action="" name="form">
+
+      <div class="temp_calculator_inputs">
+
+        <div class="calculator_value">
+
+          <label for="">Value To Convert:</label>
+
+          <input type="text" id="input_value">
+
+        </div>
+        <div class="calculator_input">
+
+          <label for="">From: </label>
+
+          <select name="input" id="input">
+
+            <option value="liters">Liters </option>
+
+            <option value="cups">Cups </option>
+
+            <option value="gallons">Gallons</option>
+
+          </select>
+
+        </div>
+
+        <div>
+          <label for="" id="To_label">To:</label>
+
+          <select name="output" id="output">
+
+            <option value="liters">Liters </option>
+
+            <option value="cups">Cups </option>
+
+            <option value="gallons ">Gallons </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      <div class="result_area">
+
+        <label for="">Answer</label>
+
+        <input type="text" value="" id="userinput">
+        
+        <span class="blinking" id="result_text"> </span><br><br>
+
+        <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
+
+        <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+
+        <button class="cal-btn2" type="button"><span> </span><a href="Front_page_Conversion.html">Back</a> </button>
+
+      </div>
+
+
+
+    </form>
+
+  </div>
+
+  <script type="text/javascript" src="Volume.js">  </script>
+
+</body>
+
+</html>

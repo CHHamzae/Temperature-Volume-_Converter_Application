@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="assets/fonts/fontAwesome/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="temperature.css">
+
+  <title>Temparature</title>
+
+</head>
+
+<body>
+
+  <div class="Temperature">
+    <h4 class="title">Convert Temperature</h4>
+    <form action="" name="form">
+      <div class="temp_calculator_inputs">
+        <div class="calculator_value">
+          <label for=""   >Value To Convert:</label>
+          <input type="text" id="input_value">
+        </div>
+        <div class="calculator_input">
+          <label for="" >From: </label>
+          <select name="input" id="input">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (°K)</option>
+          </select>
+        </div>
+        <div >
+          <label for="" id="To_label"  >To:</label>
+          <select name="output" id="output">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (°K)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="result_area">
+        
+        <label for="">Answer</label>
+
+        <input type="text" value="" id="userinput">
+
+        <span class="blinking" id="result_text"> </span><br><br>
+        <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
+        <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+        
+        <button  class="cal-btn2"   type="button"><span> </span><a href="Front_page_Conversion.html">Back</a> </button>
+      
+      </div>
+ 
+
+      
+    </form>
+
+  </div>
+
+  <script type="text/javascript" src="Temperature.js">  </script>
+</body>
+
+</html>
